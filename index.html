@@ -19,9 +19,7 @@
     <section class="navigation">
         <div class="nav-container">
             <div class="brand">
-                <a href="#!">Accidentalidad en Barranquilla</a>
-
-
+                <a href="/">Accidentalidad en Barranquilla</a>
             </div>
             <nav>
                 <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
@@ -34,11 +32,11 @@
                     </li>
 
                     <li>
-                        <a href="#!">Insights</a>
+                        <a href="#insights">Insights</a>
                     </li>
 
                     <li>
-                        <a href="#!">Contact</a>
+                        <a href="#!">Integrantes</a>
                     </li>
                 </ul>
             </nav>
@@ -49,23 +47,39 @@
         <div class="descriptions">
             <article class="description-item">
                 <p>
-                    La presente pagina hace parte de un entregable del proyecto final del programa Ingenieria de Sistemas de la Universidad del norte 
-                    zonas de alta accidentalidad en la
-                    ciudad de Barranquilla, Colombia, para esto empleamos diferentes
-                    técnicas relacionadas a Machine Learning. A continuación se muestra
-                    un dashboard desarrollado con la ayuda de la herramienta Power BI en
-                    la cual se puede realizar un análisis exploratorio del
+                    La presente pagina hace parte de un entregable del proyecto final de carrera del programa
+                    Ingenieria de Sistemas de la Universidad del Norte. En este proyecto realizamos un analisis de la
+                    accidentalidad en Barranquilla-Colombia tomando como base el
                     <a href="https://www.datos.gov.co/Transporte/Accidentalidad-en-Barranquilla/yb9r-2dsi"
-                        target="_blank">dataset utilizado</a>
-                    así como encontrar insights o generar informes que nos permitan
-                    entender mejor la accidentalidad en Barranquilla.
+                        target="_blank">dataset</a> reportado por la alcaldia Distrital en la pagina Datos Abiertos
+                    Colombia
+                    para realizar un analisis del comportamiento historico que han tenido estos eventos y encontrar
+                    insights importantes, del mismo modó se entrenó un modelo Kernel Density Estimation para estimar
+                    la probabilidad de que ocurra un accidente en un sitio especifico en funcion de la hora.
+                    Finalmente se muestra la informacion recopilada en el siguiente dashboard.
                 </p>
             </article>
         </div>
+
+        <h1 class="title" id="info">Dashboard</h1>
         <div id="dash" class="dashboard-container">
             <iframe class="dashboard" width="600" height="373.5"
                 src="https://app.powerbi.com/view?r=eyJrIjoiMGVmYTRmZWQtODRlMi00MGE5LWFlZTUtMWFiOWU0M2MxOWI4IiwidCI6ImJhYjBiNjc5LWJkNWYtNGZlOC1iNTE2LWM2YjhiMzE3Yzc4MiIsImMiOjR9"
                 frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+
+        <h1 class="title" id="insights">Insights</h1>
+        <div class="insights-container">
+            <div class="insights-card">
+                <div class="isights-color verde"></div>
+                <article class="insight">
+                    <p>
+                        Entre los meses Enero de 2015 y octubre de 2021 se reportaron 37.253 accidentes viales,
+                         en los cuales hubo 11.093 heridos y 240 Muertes. A su vez el 20.77% de los accidentes 
+                         tuvo heridos y el 0.64% tuvo muertes.
+                    </p>
+                </article>
+            </div>
         </div>
     </div>
 </body>
