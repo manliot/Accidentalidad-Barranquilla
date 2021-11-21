@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.navigation {
+    height: 70px;
+    background: #262626;
+}
+
+.brand {
+    position: absolute;
+    padding-left: 20px;
+    float: left;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-size: 1em;
+    
+
+}
+
+.brand a,
+.brand a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+}
+
+nav ul li a,
+nav ul li a:visited {
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    background: #262626;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:visited:hover {
+    background: #2581dc;
+    color: #ffffff;
+}
+
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+    padding-left: 4px;
+    content: " ▾";
+}
+
+nav ul li ul li {
+    min-width: 190px;
+}
+
+nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px;
+}
+
+/* Mobile navigation */
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #262626;
+    height: 70px;
+    width: 70px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+    height: 100%;
+}
+
+.title {
+    font-weight: bold;
+    color: #5a8d37;
+    margin: 5rem 0 2rem 0;
+}
+
+.descriptions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.description-item {
+    max-width: 50vw;
+    text-align: center;
+}
+
+.dashboard-container {
+    height: 80vh;
+    width: 80vw;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 5%) 0px 2px 9px 0px;
+}
+
+.dashboard {
+    height: 100%;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 798px) {
+    .nav-mobile {
+      display: block;
+    }
+  
+    nav {
+      width: 100%;
+      padding: 70px 0 15px;
+    }
+    nav ul {
+      display: none;
+    }
+    nav ul li {
+      float: none;
+    }
+    nav ul li a {
+      padding: 15px;
+      line-height: 20px;
+    }
+    nav ul li ul li a {
+      padding-left: 30px;
+    }
+  
+    .nav-dropdown {
+      position: static;
+    }
+  }
+  @media screen and (min-width: 799px) {
+    .nav-list {
+      display: block !important;
+    }
+  }
